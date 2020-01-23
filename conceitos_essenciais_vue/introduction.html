@@ -11,6 +11,10 @@
         <a v-bind:href="docs">VueJS</a>
         <p v-once>Meu nome é:<span v-text="nome"></span></p>
         <p>Meu nome é: {{getNome()}}</p>
+
+        <span>Manipulando Eventos</span>
+        <button v-on:click='incrementar'>Clique</button>
+        <p>Botão clicado {{ cliques }} vezes</p>
     </div>
 
     <script>
@@ -20,12 +24,16 @@
                 mensagem: 'Olá vueJS',
                 //data binding de atributos
                 docs: 'https://vuejs.org/v2/style-guide/',
-                nome: 'Thaís Ribeiro'
+                nome: 'Thaís Ribeiro',
+                cliques: 0,
             },
             methods: {
                getNome: function() {
                    this.nome = "Thaís";
                    return this.nome;
+               },
+               incrementar: function() {
+                   this.cliques++;
                }
             },
         });
