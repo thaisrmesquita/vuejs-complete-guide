@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>VueJs - Guia Completo</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <div id='app'>
+        <p>{{ mensagem }}</p>
+        <a v-bind:href="docs">VueJS</a>
+        <p>Meu nome é:<span v-text="nome"></span></p>
+    </div>
+
+    <script>
+        new Vue({
+            el:'#app',
+            data: {
+                mensagem: 'Olá vueJS',
+                //data binding de atributos
+                docs: 'https://vuejs.org/v2/style-guide/',
+                nome: 'Thaís Ribeiro'
+            },
+        });
+    </script>
+    
+</body>
+</html>

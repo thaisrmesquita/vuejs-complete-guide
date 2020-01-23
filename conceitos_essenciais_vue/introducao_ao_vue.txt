@@ -1,0 +1,20 @@
+Introdução
+
+O vue.js é um framework progressivo para construção de interfaces do usuário.
+
+* pode ser adotado incrementalmente
+* fácil de integrar com bibliotecas ou projetos existentes
+* pode ser usado para criar sofisticadas multi ou single page applications (MPA e SPA)
+
+* Acessível (html, css, js)
+* versartil (ecossistema com adoção incremental, escala de uma simples biblioteca a um framework completo)
+* perfomatico(20kb min + gzip runtime virtual dom extremamente rápido esforço minimo para otimizações)
+* manutenivel
+* testável
+
+Vue.js everrywhere
+Componentes reusáveis
+
+vue cria tudo internamente e depois faz um output final que é exibido na tela
+
+Vue js faz um proxy, por isso internamente conseguimos acessar dados internamente com o this.
